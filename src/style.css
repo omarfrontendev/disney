@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+body {
+  scroll-behavior: smooth;
+  background-color: #040714;
+  color: #f9f9f9;
+  font-family: Avenir-Roman, sans-serif;
+  font-size: 16px;
+}
+@media(max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 479px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* Globale classes */
+
+.flex {
+  display: flex;
+}
+.flex.end {
+  justify-content: flex-end;
+}
+.flex.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex.space-between {
+  justify-content: space-between;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.column-end {
+  flex-direction: column;
+  align-items: flex-end;
+}
+.flex.column-center {
+  flex-direction: column;
+  align-items: center;
+}
+/* .flex.start {
+  justify-content: start;
+} */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.page__space_top {
+  margin-top: 81px;
+}
+/* Container */
+.container {
+  max-width: 1800px;
+  padding: 0 40px;
+  margin:  0 auto;
+}
+@media(max-width: 1199px) {
+  .container {
+    padding: 0 20px;
+  }
+}

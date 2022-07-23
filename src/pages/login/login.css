@@ -1,0 +1,60 @@
+.login__page {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/public/assets/login-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login__page-cta {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+}
+.login__page__cta-logo {
+  width: 100%;
+}
+.login__page__cta-logo button {
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 4px;
+  letter-spacing: 1.2px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #0063e5;
+  border: 1px solid transparent;
+  margin: 20px 0 10px;
+}
+.login__page__cta-logo button:hover {
+  background-color: #0483ee;
+}
+.login__page__cta-logo p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(0, 0%, 95.3%, 1);
+  text-transform: capitalize;
+}
+@media(max-width: 1199px) {
+  .login__page-cta {
+    max-width: 514px;
+  }
+  .login__page__cta-logo button {
+    padding: 18px 0;
+    font-size: 20px;
+  }
+  .login__page__cta-logo p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+@media(max-width: 767px) {
+  .login__page-cta {
+    max-width: 500px;
+  }
+}
+@media (max-width: 575px) {
+  .login__page-cta {
+    max-width: 90%;
+  }
+}

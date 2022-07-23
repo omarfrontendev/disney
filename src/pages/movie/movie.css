@@ -1,0 +1,143 @@
+.movie__page {
+  min-height: calc(100vh - 81px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.movie__page::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000005e;
+}
+.movie__page__content {
+  z-index: 1;
+  justify-content: center;
+  padding-top: 100px;
+  width: 500px;
+  max-width: 100%;
+}
+.btns_destails {
+  margin: 30px 0 45px;
+  column-gap: 14px;
+}
+.btn__play {
+  color: #000;
+  background-color: #fff;
+  padding: 6px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: .3s ease;
+  column-gap: 8px;
+  border: 1px solid;
+  text-transform: uppercase;
+}
+.play__icon {
+  font-size: 35px;
+}
+.btn__play:hover {
+  background-color: transparent;
+  border: 1px solid;
+  color: #fff;
+}
+.btn__play.__trailer {
+  background-color: transparent;
+  color: #fff;
+}
+.btn__play.__trailer:hover {
+  color: #000;
+  background-color: #fff;
+}
+.add_icon {
+  color: #fff;
+  display: block;
+  transition: .3s ease;
+  width: 50px;
+  height: 50px;
+}
+.remove__btn .add_icon {
+  color: #3cff3c;
+}
+.add_icon:hover {
+  transform: rotate(180deg);
+  color: #ddd;
+}
+.remove__btn:hover .add_icon {
+  transform: rotate(0deg);
+  color: #f14f4f;
+}
+.group__btn {
+  height: 50px;
+  width: 50px;
+  background: radial-gradient(black, #00000080);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: .3s ease;
+}
+.group__btn:hover {
+  transform: scale(1.1);
+}
+.group__btn img {
+  width: 34px;
+}
+.subtitle {
+  margin-bottom: 20px;
+}
+.subtitle,
+.desc {
+  line-height: 32px;
+  font-size: 18px;
+  color: rgb(195 195 195);
+}
+@media(max-width: 1199px) {
+  .movie__page {
+    background-position: right;
+  }
+  .movie__page::after {
+    background-color: #000000b5;  
+  }
+  .movie__page__content {
+    width: 60%;
+  }
+  .img_title {
+    width: 500px;
+    max-width: 100%;
+  }
+}
+@media(max-width: 991px) {
+  .movie__page__content {
+    width: 80%;
+  }
+  .img_title {
+    width: 400px;
+  }
+}
+@media(max-width: 575px) {
+  .movie__page__content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .img_title {
+    width: 70%;
+  }
+  .btns_destails {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .btns_destails button.add_btn,
+  .btns_destails > div,
+  .btns_destails a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .group__btn {
+    /* border-radius: 0;
+    width: fit-content; */
+  }
+}
